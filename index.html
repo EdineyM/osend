@@ -264,7 +264,7 @@
       <header class="hero">
         <span class="chip">Base legal O-Send</span>
         <h1>Políticas de Privacidade e Termos de Serviço</h1>
-        <p class="meta">Última atualização: Março de 2026</p>
+        <p class="meta">Última atualização: 28 de outubro de 2026</p>
       </header>
 
       <nav class="toc" aria-label="Navegação rápida da página">
@@ -295,36 +295,107 @@
         <section id="privacidade">
           <h2>Política de Privacidade</h2>
 
-          <h3>1. Coleta de Dados</h3>
+          <h3>1. Quem somos (controlador)</h3>
           <p>
-            O O-Send atua como um provedor de tecnologia. Para o funcionamento
-            da plataforma, coletamos informações de cadastro (nome, e-mail,
-            dados da empresa) e informações necessárias para a integração com a
-            API Oficial do WhatsApp (tokens de acesso e números de telefone).
+            O O-Send é uma plataforma de atendimento pelo WhatsApp da
+            <strong>O-Level</strong>, controladora dos dados pessoais tratados
+            para operar o O-Send. Contato e encarregado de dados (LGPD):
+            Ediney Mendonça, <strong>ediney@olevel.com.br</strong>. O O-Send é
+            operado como Provedor de Tecnologia da Meta pelo portfólio
+            empresarial verificado "Nillai", nome que aparece na janela de
+            cadastro da Meta ao conectar um número.
           </p>
 
-          <h3>2. Uso das Informações</h3>
+          <h3>2. Dados que tratamos</h3>
+          <ol>
+            <li>
+              <strong>Cadastro:</strong> nome, e-mail e senha dos usuários do
+              O-Send (a senha é guardada apenas como hash) e o nome da empresa
+              (workspace).
+            </li>
+            <li>
+              <strong>Conta WhatsApp Business conectada:</strong> identificadores
+              da conta (WABA) e do número, nome verificado e qualidade do
+              número, modelos de mensagem e os tokens de acesso fornecidos pela
+              Meta.
+            </li>
+            <li>
+              <strong>Conversas:</strong> nome de perfil e número de telefone
+              das pessoas que escrevem para o número da empresa, conteúdo das
+              mensagens enviadas e recebidas, status de entrega (enviada,
+              entregue, lida) e as notas internas e etiquetas criadas pela
+              equipe da empresa.
+            </li>
+            <li>
+              <strong>Registros técnicos:</strong> logs de acesso e de erro,
+              sem conteúdo de mensagens e sem tokens.
+            </li>
+          </ol>
+
+          <h3>3. Finalidades e bases legais</h3>
           <p>
-            Os dados coletados são utilizados exclusivamente para: fornecer a
-            infraestrutura de envio e recebimento de mensagens via WhatsApp API;
-            realizar cobranças e faturamento; e prestar suporte técnico ao
-            cliente.
+            Usamos os dados para: prestar o serviço de envio e recebimento de
+            mensagens pela API oficial do WhatsApp e exibir as conversas à
+            equipe da empresa (execução de contrato); cobrança e faturamento;
+            suporte técnico; segurança e prevenção a abuso (legítimo
+            interesse); e cumprimento de obrigações legais. Não usamos os dados
+            para publicidade nem os vendemos. Em relação às conversas com os
+            clientes da empresa, tratamos os dados em nome e conforme as
+            instruções da empresa que usa o O-Send.
           </p>
 
-          <h3>3. Compartilhamento de Dados</h3>
+          <h3>4. Compartilhamento e operadores</h3>
           <p>
-            O O-Send compartilha os dados de tráfego de mensagens estritamente
-            com a Meta Platforms, Inc. (WhatsApp), conforme exigido para a
-            prestação do serviço. Não vendemos ou compartilhamos seus dados com
-            terceiros para fins publicitários.
+            Os dados são compartilhados somente com quem é necessário para
+            prestar o serviço: a <strong>Meta Platforms, Inc.</strong>
+            (WhatsApp Cloud API), para enviar e receber as mensagens; e a
+            <strong>Railway Corporation</strong>, que hospeda a aplicação e o
+            banco de dados do O-Send. Também podemos fornecer dados a
+            autoridades quando houver obrigação legal ou ordem judicial,
+            limitados ao mínimo necessário.
+          </p>
+
+          <h3>5. Transferência internacional</h3>
+          <p>
+            A Meta e a Railway processam dados nos Estados Unidos. Essas
+            transferências ocorrem para executar o serviço contratado, com as
+            salvaguardas contratuais oferecidas por esses provedores.
+          </p>
+
+          <h3>6. Retenção</h3>
+          <p>
+            Mantemos os dados enquanto a conta da empresa estiver ativa. Após o
+            encerramento da conta ou um pedido de exclusão, os dados são
+            eliminados dos sistemas em produção em até 7 dias úteis; cópias de
+            segurança do provedor de hospedagem são sobrescritas no ciclo
+            normal de backup. Dados exigidos por lei podem ser guardados pelo
+            prazo legal.
+          </p>
+
+          <h3>7. Seus direitos</h3>
+          <p>
+            Pela LGPD, você pode pedir confirmação e acesso aos seus dados,
+            correção, anonimização, bloqueio ou eliminação, portabilidade,
+            informação sobre compartilhamento e revogação de consentimento,
+            pelo e-mail <strong>ediney@olevel.com.br</strong>. Se você conversou
+            com uma empresa que usa o O-Send, também pode fazer o pedido
+            diretamente a essa empresa.
+          </p>
+
+          <h3>8. Segurança</h3>
+          <p>
+            Usamos conexões criptografadas (HTTPS), senhas com hash argon2id,
+            isolamento dos dados de cada empresa no banco de dados e acesso
+            restrito aos tokens, que nunca são exibidos na interface.
           </p>
 
           <div id="exclusao-dados">
-            <h3>4. Instruções de Exclusão de Dados do Usuário</h3>
+            <h3>9. Instruções de Exclusão de Dados do Usuário</h3>
             <p>
               Em conformidade com a LGPD e as políticas da Meta, qualquer
-              usuário do O-Send pode solicitar a exclusão permanente de seus
-              dados e a revogação de acesso da plataforma.
+              usuário do O-Send, e qualquer pessoa cujas conversas passaram
+              pelo O-Send, pode solicitar a exclusão permanente de seus dados e
+              a revogação de acesso da plataforma.
             </p>
             <p><strong>Passo a passo para exclusão:</strong></p>
             <ol>
@@ -335,7 +406,9 @@
               </li>
               <li>
                 No corpo do e-mail, informe o nome da sua empresa e o número de
-                WhatsApp vinculado à nossa plataforma.
+                WhatsApp vinculado à nossa plataforma (ou, se você é cliente de
+                uma empresa, o seu número e o nome da empresa com quem
+                conversou).
               </li>
               <li>
                 Nossa equipe processará a exclusão total de seus dados de nossos
@@ -348,6 +421,12 @@
               </li>
             </ol>
           </div>
+
+          <h3>10. Alterações</h3>
+          <p>
+            Esta política pode ser atualizada. A data da última atualização
+            fica no topo desta página.
+          </p>
         </section>
 
         <hr class="divider" />
